@@ -1,0 +1,17 @@
+[Unit]
+Description=Silent ADB connection to Android device (192.168.1.128:4843)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/connect-android.sh
+RemainAfterExit=yes
+# Run as root so it can access adb and write logs
+User=root
+StandardOutput=null
+StandardError=null
+
+[Install]
+WantedBy=multi-user.target
+
