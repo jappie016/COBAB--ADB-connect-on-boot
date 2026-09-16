@@ -3,3 +3,8 @@ Automatically detects and connects to the randomized ADB port for specified IP a
 for seamless "ecosystem" experience, without a terminal popup
 
 NO NEED TO CONNECT THE USB FIRST
+
+Requirements:
+- ABD
+- SCRCPY
+- The device must be paired using adb pair
